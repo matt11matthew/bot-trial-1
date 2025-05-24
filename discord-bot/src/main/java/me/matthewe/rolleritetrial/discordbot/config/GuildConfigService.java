@@ -30,7 +30,7 @@ public class GuildConfigService {
     @PostConstruct
     public void loadAllConfigs() throws IOException {
         Resource[] resources = new PathMatchingResourcePatternResolver()
-                .getResources("classpath:guild_configs/*.json");
+                .getResources(guildConfigPath+"/*.json");
 
         for (Resource resource : resources) {
             GuildConfig config = objectMapper.readValue(resource.getInputStream(), GuildConfig.class);

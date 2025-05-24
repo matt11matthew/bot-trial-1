@@ -9,5 +9,7 @@ public class GuildConfig {
 
     @JsonProperty("guildId")
     private long guildId;
+    @JsonProperty("ticketCreationChannelId")
+    private long ticketCreationChannelId;
 
 }

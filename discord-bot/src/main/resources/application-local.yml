@@ -2,3 +2,7 @@ spring:
   data:
     mongodb:
       uri: mongodb://localhost:27020
+server:
+  port: 3010
+config:
+  guild-folder: classpath:guild_configs
