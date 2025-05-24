@@ -4,6 +4,10 @@
   <groupId>me.matthewe.universal</groupId>
   <artifactId>rollerite-bot-trial</artifactId>
   <version>1.0-SNAPSHOT</version>
-  <name>Archetype - rollerite-bot-trial</name>
-  <url>http://maven.apache.org</url>
+  <name>rollerite-bot-trial</name>
+
+  <packaging>pom</packaging>
+  <modules>
+    <module>discord-bot</module>
+  </modules>
 </project>

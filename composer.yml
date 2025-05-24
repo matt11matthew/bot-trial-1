@@ -3,10 +3,10 @@ version: "3.8"
 services:
   mongo:
     image: mongo:7.0
-    container_name: code-mongo
+    container_name: rollerite-mongo
     restart: unless-stopped
     ports:
-      - "127.0.0.1:27020:27017"
+      - "127.0.0.1:27020:27018"
     volumes:
       - mongo-data-rollerite:/data/db
 
