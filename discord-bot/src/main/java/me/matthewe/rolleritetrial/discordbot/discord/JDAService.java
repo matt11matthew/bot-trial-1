@@ -20,6 +20,9 @@ public class JDAService {
         jda.awaitReady(); // wait for JDA to be fully loaded
         jda.getPresence().setActivity(Activity.watching("Tickets"));
         log.info("JDA started");
+
+
+
     }
 
     public JDA getJda() {

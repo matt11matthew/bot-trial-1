@@ -17,13 +17,11 @@ public class DiscordCommandService {
     @Autowired private GuildConfigService guildConfigService;
     @Autowired private DiscordBotService botService;
 
-    @Autowired private CodeAutoCompleteHandler codeAutoCompleteHandler;
     @Autowired private CodeCommandHandler commandHandler;
 
     @PostConstruct
     public void start() {
 
-        jdaService.jda.addEventListener(codeAutoCompleteHandler);
         jdaService.jda.addEventListener(commandHandler);
 
         jdaService.jda.getGuilds().forEach(guild -> {
@@ -36,18 +34,16 @@ public class DiscordCommandService {
 
 
     private void registerCommands(Guild guild) {
-//        guild.upsertCommand("createcode", "Create a new code")
-//                .addOption(OptionType.STRING, "code", "The code value", true, false)
-//                .addOption(OptionType.STRING, "customer", "Customer name", true, false)
-//                .addOption(OptionType.STRING, "time", "Expiration time (e.g. 10d, 2h, -1 for, forever)", true, false)
-//                .queue();
-//        guild.upsertCommand("extendcode", "Extends a code")
-//                .addOption(OptionType.STRING, "code", "The code value", true, true)
-//                .addOption(OptionType.STRING, "time", "Extension time (e.g. 10d, 2h, -1 for, forever)", true, false)
-//                .queue();
-//        guild.upsertCommand("cancelcode", "Cancels a code")
-//                .addOption(OptionType.STRING, "code", "The code value", true, true)
-//                .queue();
+        guild.upsertCommand("close", "Closes a ticket.").queue();
+        guild.upsertCommand("new", "Creates a ticket.").queue();
+        guild.upsertCommand("add", "Adds user to a ticket.")
+                .addOption(OptionType.USER, "user", "User to add to ticket.", true)
+                .queue();
+        guild.upsertCommand("remove", "Removes user from a ticket.")
+                .addOption(OptionType.USER, "user", "User to remove from ticket.", true)
+                .queue();
+
+
 
         log.info("Discord command service registered for " + guild.getName());
 
