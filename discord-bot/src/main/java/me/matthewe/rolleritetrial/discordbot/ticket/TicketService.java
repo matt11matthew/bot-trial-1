@@ -27,17 +27,6 @@ public class TicketService {
 
         return ticketRepository.save(ticket);
     }
-
-    // Get all tickets by user
-    public List<Ticket> getTicketsByUser(String userId) {
-        return ticketRepository.findByUserId(userId);
-    }
-
-    // Get all tickets by guild
-    public List<Ticket> getTicketsByGuild(String guildId) {
-        return ticketRepository.findByGuildId(guildId);
-    }
-
     // Close a ticket
     public boolean closeTicket(String ticketId) {
         Optional<Ticket> optional = ticketRepository.findById(ticketId);
@@ -51,11 +40,6 @@ public class TicketService {
         return false;
     }
 
-    // Check if user has an open ticket in a guild
-    public boolean hasOpenTicket(String userId, String guildId) {
-        return ticketRepository.findByUserId(userId).stream()
-                .anyMatch(t -> t.getGuildId().equals(guildId) && t.getStatus() == Ticket.Status.OPEN);
-    }
 
     // Find ticket by channel ID
     public Optional<Ticket> getTicketByChannelId(String channelId) {
