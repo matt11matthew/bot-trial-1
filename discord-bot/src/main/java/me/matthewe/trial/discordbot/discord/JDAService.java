@@ -1,4 +1,4 @@
-package me.matthewe.rolleritetrial.discordbot.discord;
+package me.matthewe.trial.discordbot.discord;
 
 
 import jakarta.annotation.PostConstruct;

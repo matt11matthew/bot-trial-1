@@ -1,10 +1,10 @@
-package me.matthewe.rolleritetrial.discordbot.command;
+package me.matthewe.trial.discordbot.command;
 
 import jakarta.annotation.PostConstruct;
 import lombok.extern.java.Log;
-import me.matthewe.rolleritetrial.discordbot.config.GuildConfigService;
-import me.matthewe.rolleritetrial.discordbot.discord.DiscordBotService;
-import me.matthewe.rolleritetrial.discordbot.discord.JDAService;
+import me.matthewe.trial.discordbot.config.GuildConfigService;
+import me.matthewe.trial.discordbot.discord.DiscordBotService;
+import me.matthewe.trial.discordbot.discord.JDAService;
 import net.dv8tion.jda.api.entities.Guild;
 import net.dv8tion.jda.api.interactions.commands.OptionType;
 import org.springframework.beans.factory.annotation.Autowired;

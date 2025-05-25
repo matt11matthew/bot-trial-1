@@ -1,4 +1,4 @@
-package me.matthewe.rolleritetrial.discordbot.ticket;
+package me.matthewe.trial.discordbot.ticket;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;

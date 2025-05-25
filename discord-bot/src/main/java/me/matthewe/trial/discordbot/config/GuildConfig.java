@@ -1,4 +1,4 @@
-package me.matthewe.rolleritetrial.discordbot.config;
+package me.matthewe.trial.discordbot.config;
 
 
 import com.fasterxml.jackson.annotation.JsonProperty;

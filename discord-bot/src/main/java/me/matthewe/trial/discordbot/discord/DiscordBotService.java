@@ -1,30 +1,25 @@
-package me.matthewe.rolleritetrial.discordbot.discord;
+package me.matthewe.trial.discordbot.discord;
 
 import jakarta.annotation.PostConstruct;
 import lombok.extern.java.Log;
-import me.matthewe.rolleritetrial.discordbot.config.GuildConfig;
-import me.matthewe.rolleritetrial.discordbot.config.GuildConfigService;
-import me.matthewe.rolleritetrial.discordbot.ticket.TicketService;
+import me.matthewe.trial.discordbot.config.GuildConfig;
+import me.matthewe.trial.discordbot.config.GuildConfigService;
+import me.matthewe.trial.discordbot.ticket.TicketService;
 import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.Permission;
 import net.dv8tion.jda.api.entities.Guild;
-import net.dv8tion.jda.api.entities.IPermissionHolder;
 import net.dv8tion.jda.api.entities.Message;
 import net.dv8tion.jda.api.entities.User;
 import net.dv8tion.jda.api.entities.channel.concrete.Category;
 import net.dv8tion.jda.api.entities.channel.concrete.TextChannel;
 import net.dv8tion.jda.api.events.Event;
-import net.dv8tion.jda.api.events.interaction.GenericInteractionCreateEvent;
-import net.dv8tion.jda.api.events.interaction.command.GenericCommandInteractionEvent;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 import net.dv8tion.jda.api.events.interaction.component.ButtonInteractionEvent;
-import net.dv8tion.jda.api.events.interaction.component.GenericComponentInteractionCreateEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 import net.dv8tion.jda.api.interactions.components.buttons.Button;
 import org.jetbrains.annotations.NotNull;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Service;
 
 import java.awt.*;

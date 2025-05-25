@@ -1,11 +1,10 @@
-package me.matthewe.rolleritetrial.discordbot.command;
+package me.matthewe.trial.discordbot.command;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.java.Log;
-import me.matthewe.rolleritetrial.discordbot.discord.DiscordBotService;
-import me.matthewe.rolleritetrial.discordbot.ticket.Ticket;
-import me.matthewe.rolleritetrial.discordbot.ticket.TicketRepository;
-import me.matthewe.rolleritetrial.discordbot.ticket.TicketService;
+import me.matthewe.trial.discordbot.discord.DiscordBotService;
+import me.matthewe.trial.discordbot.ticket.Ticket;
+import me.matthewe.trial.discordbot.ticket.TicketService;
 import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.Permission;
 import net.dv8tion.jda.api.entities.Guild;

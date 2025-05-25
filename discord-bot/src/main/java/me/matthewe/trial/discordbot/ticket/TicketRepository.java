@@ -1,4 +1,4 @@
-package me.matthewe.rolleritetrial.discordbot.ticket;
+package me.matthewe.trial.discordbot.ticket;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 

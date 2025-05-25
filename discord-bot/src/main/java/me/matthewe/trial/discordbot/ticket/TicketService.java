@@ -1,4 +1,4 @@
-package me.matthewe.rolleritetrial.discordbot.ticket;
+package me.matthewe.trial.discordbot.ticket;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

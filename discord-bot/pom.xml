@@ -8,7 +8,7 @@
         <version>3.5.0</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>me.matthewe.rolleritetrial</groupId>
+    <groupId>me.matthewe.trial</groupId>
     <artifactId>discord-bot</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>discord-bot</name>

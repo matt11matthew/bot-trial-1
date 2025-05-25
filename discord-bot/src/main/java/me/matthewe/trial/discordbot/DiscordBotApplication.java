@@ -1,4 +1,4 @@
-package me.matthewe.rolleritetrial.discordbot;
+package me.matthewe.trial.discordbot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
