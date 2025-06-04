@@ -22,6 +22,7 @@ public class DiscordCommandService {
     @PostConstruct
     public void start() {
 
+        commandHandler.registerCommands();
         jdaService.jda.addEventListener(commandHandler);
 
         jdaService.jda.getGuilds().forEach(guild -> {
